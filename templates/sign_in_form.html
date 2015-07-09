@@ -1,0 +1,9 @@
+<form action="/user/auth" method="POST">
+  <span>Please sign in or <a href="/user/sign_up">sign up</a>.</span>
+  <input type="text" name="token" placeholder="Username, email or phone number">
+  <input type="password" name="password" placeholder="Password">
+  <label><a href="/user/forgot_password">Forgot your password?</a></label>
+  <input type="hidden" name="xsrf_token" value="{{ .xsrf_token }}">
+  <input type="hidden" name="param" value="{{ .param }}">
+  <input type="submit" class="cta" value="Sign In">
+</form>
