@@ -1,7 +1,7 @@
 package calcutta
 
 import (
-	"github.com/adg/xsrftoken"
+	"golang.org/x/net/xsrftoken"
 	"net/http"
 	"github.com/likestripes/kolkata"
 )
